@@ -235,3 +235,23 @@ PyTorch     → deep learning
 Hugging Face→ pretrained AI/LLM models
 LangChain   → LLM applications/agents
 FastAPI     → expose your Python/AI code as an API
+
+
+python -c "import numpy; print(numpy.__version__)"
+
+NumPy:
+>>> a = np.array([1,2,3])
+>>> b = np.array([(1.5,2,3), (4,5,6)], dtype = float)
+>>> c = np.array([[(1.5,2,3), (4,5,6)],[(3,2,1), (4,5,6)]], dtype = float)
+
+np.zeros((3,4))
+np.ones((2,3,4),dtype=np.int16)
+np.arange(10,50,5) output : [10 15 20 25 30 35 40 45]
+np.linspace(0,2,9)  [0.   0.25 0.5  0.75 1.   1.25 1.5  1.75 2.  ]
+np.full((2,2),7)   [[7 7]  [7 7]]
+np.eye(2) [[1. 0.]  [0. 1.]]
+np.random.random((2,2)), output: [[0.06659435 0.5264786 ] [0.7767073  0.11546391]]
+np.empty((3,2))
+
+
+ 
