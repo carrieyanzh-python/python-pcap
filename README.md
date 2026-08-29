@@ -1,4 +1,5 @@
 # python-pcap
+Python is an interpreted, high-level programming language.
 Python vs Java import
 
 
@@ -144,6 +145,16 @@ o __str__: Defines how an object is represented as a string.
 o __add__: Defines behavior for the + operator.
 o __eq__: Defines behavior for equality comparison (==).
 
+| Method          | Built-in operation    |
+| --------------- | --------------------- |
+| `__len__()`     | `len(x)`              |
+| `__str__()`     | `str(x)` / `print(x)` |
+| `__add__()`     | `x + y`               |
+| `__eq__()`      | `x == y`              |
+| `__getitem__()` | `x[index]`            |
+
+__name__ and __doc__ attribute
+
 Method	Purpose	Parameter
 __new__()	Creates the object	cls
 __init__()	Initializes the object	self
@@ -213,6 +224,27 @@ BaseException
 
 Know ValueError, TypeError, IndexError, KeyError, NameError, AttributeError, ZeroDivisionError, ImportError, ModuleNotFoundError, and FileNotFoundError especially well.
 
+
+| Comprehension                | Creates | Example                        |
+| ---------------------------- | ------- | ------------------------------ |
+| **List comprehension**       | `list`  | `[x * 2 for x in range(5)]`    |
+| **Set comprehension**        | `set`   | `{x * 2 for x in range(5)}`    |
+| **Dictionary comprehension** | `dict`  | `{x: x * 2 for x in range(5)}` |
+
+List       → [ ... for ... ]
+Set        → { ... for ... }
+Dictionary → {key: value for ...}
+Tuple      → NO tuple comprehension
+Generator  → ( ... for ... )
+
+| Type           | Syntax | Example            |
+| -------------- | ------ | ------------------ |
+| **List**       | `[]`   | `[1, 2, 3]`        |
+| **Set**        | `{}`   | `{1, 2, 3}`        |
+| **Dictionary** | `{}`   | `{"a": 1, "b": 2}` |
+| **Tuple**      | `()`   | `(1, 2, 3)`        |
+
+
 Pandas                  ← library
   └── pandas.core       ← package/subpackage
        └── frame.py     ← module
@@ -225,6 +257,19 @@ iloc means integer-location based indexing.
 dropna() → remove missing-data rows
 inplace=True → make the change directly to the original DataFrame
 
+async/await, type hints, decorators, and context managers
+
+py -3.14 -m pip install -U scikit-learn
+
+PCAP exam tip: An iterable can be passed to iter(). An iterator supports next().
+
+Counter
+defaultdict
+deque
+namedtuple
+
+type(x)                    → check object's type
+type(name, bases, dict)    → create a class
 
 Python   -> NumPy -> Pandas -> Matplotlib -> scikit-learn -> PyTorch -> Hugging Face -> LangChain -> FastAPI -> AI application / REST API
 
@@ -238,6 +283,25 @@ FastAPI     → expose your Python/AI code as an API
 
 
 python -c "import numpy; print(numpy.__version__)"
+
+Operation	Python
+Intersection 交集	set(X).intersection(set(Y))
+Union 并集	set(X).union(set(Y))
+Difference 差集	set(X).difference(set(Y))
+
+heapq is a built-in Python standard library module.
+
+Python
+ └── Standard Library
+      └── heapq
+           ├── nlargest()
+           ├── nsmallest()
+           ├── heappush()
+           ├── heappop()
+           └── heapify()
+
+List denoted by [ ], set by { } , and array/tuple by ( )
+
 
 NumPy:
 >>> a = np.array([1,2,3])
