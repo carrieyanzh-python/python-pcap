@@ -1,5 +1,17 @@
 # python-pcap
+
 Python is an interpreted, high-level programming language.
+
+| Syntax      | Type       | Example        |
+| ----------- | ---------- | -------------- |
+| `(1, 2, 3)` | tuple      | `type → tuple` |
+| `[1, 2, 3]` | list       | `type → list`  |
+| `{1, 2, 3}` | set        | `type → set`   |
+| `{"a": 1}`  | dictionary | `type → dict`  |
+| `set()`     | empty set  | `type → set`   |
+
+Python is best described as using "pass by object reference" (also called pass by assignment).
+
 Python vs Java import
 
 
@@ -153,10 +165,12 @@ o __eq__: Defines behavior for equality comparison (==).
 | `__eq__()`      | `x == y`              |
 | `__getitem__()` | `x[index]`            |
 
+__repr__()
+
 __name__ and __doc__ attribute
 
 Method	Purpose	Parameter
-__new__()	Creates the object	cls
+__new__()	Creates the object	cls : __new__() is called before __init__().
 __init__()	Initializes the object	self
 
 Try, Except, Else, and Finally Blocks
@@ -222,6 +236,14 @@ BaseException
 ├── SystemExit
 └── GeneratorExit
 
+The most popular Python data visualization libraries are:
+
+Matplotlib
+Seaborn
+Plotly
+Bokeh
+
+
 Know ValueError, TypeError, IndexError, KeyError, NameError, AttributeError, ZeroDivisionError, ImportError, ModuleNotFoundError, and FileNotFoundError especially well.
 
 
@@ -235,7 +257,9 @@ List       → [ ... for ... ]
 Set        → { ... for ... }
 Dictionary → {key: value for ...}
 Tuple      → NO tuple comprehension
-Generator  → ( ... for ... )
+Generator  → ( ... for ... ) : Generators automatically implement the __iter__() and __next__() methods, which allows them to be used directly in loops and with the next() function.
+
+ sort() and sorted(mylist)
 
 | Type           | Syntax | Example            |
 | -------------- | ------ | ------------------ |
