@@ -2,6 +2,27 @@
 
 Python is an interpreted, high-level programming language.
 
+A Python identifier is a name used to identify a variable, function, class, module or other object. An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores and digits (0 to 9).
+Python does not allow punctuation characters such as &commat;, $, and % within identifiers.
+
+A variable name must start with a letter or the underscore character
+A variable name cannot start with a number or any special character like $, (, * % etc.
+A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Python variable names are case-sensitive which means Name and NAME are two different variables in Python.
+Python reserved keywords cannot be used naming the variable.
+
+Public vs Protected vs Private Variables
+Here is a tabular comparison of Public, Protected, and Private variables in Python −
+
+Feature	Public Variables	Protected Variables	Private Variables
+Definition	Variables that can be accessed from anywhere.	Variables that can be accessed within the class and its subclasses.	Variables that can only be accessed within the class they are defined in.
+Syntax	int var	int _var	int __var
+Security	Least secure	Moderately secure	Most secure
+Example	int age = 25	int _age = 25	int __age = 25
+
+Python 3.0 onwards has built-in support for Unicode.
+
+
 | Syntax      | Type       | Example        |
 | ----------- | ---------- | -------------- |
 | `(1, 2, 3)` | tuple      | `type → tuple` |
